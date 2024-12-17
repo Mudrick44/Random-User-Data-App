@@ -1,0 +1,134 @@
+/* App.css */
+.app-container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #f4f7fa; 
+  min-height: 100vh; 
+}
+
+.app-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left;
+  background-color: #f0e6d6; 
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Profile Column */
+.profile-column {
+  width: 100%;
+  max-width: 350px; 
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Profile card styles */
+.profile-card {
+  width: 100%;
+  background: linear-gradient(145deg, #f0f0f0, #c0c0c0); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile Image */
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff; 
+  margin-bottom: 15px;
+}
+
+/* Profile Name */
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f1f1f;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Profile Info */
+.profile-info {
+  color: #5a5a5a;
+  font-size: 1rem;
+  margin: 8px 0;
+  text-align: left;
+  width: 100%;
+}
+
+.profile-info .font-semibold {
+  font-weight: bold;
+  color: #333;
+  padding: 6px 12px; 
+  border-radius: 20px; 
+  background-color: #e0f7fa; 
+  margin-right: 10px; 
+  display: inline-block; 
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .profile-column {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .profile-card {
+    padding: 15px;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-name {
+    font-size: 1.2rem;
+  }
+
+  .profile-info {
+    font-size: 0.9rem;
+  }
+
+  .profile-button {
+    width: 100%; 
+  }
+}
+
+.button-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+
+  background: #6E6D70;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #DFDEDF;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-12:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
